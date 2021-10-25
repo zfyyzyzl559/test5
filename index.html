@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我是市长</title>
+    <link rel="stylesheet" href="css/index.menu.css">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+        .vfx-image-wrap {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            cursor: ew-resize;
+        }
+        .before-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            overflow: hidden;
+            width: 100vw;
+            height: 100vh;
+        }
+        .after-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+        .before-image img{
+            width:100vw;
+            height:100vh;
+        }
+        .after-image img{
+            width:100vw;
+            height:100vh;
+        }
+        #wenzi2{
+            position:absolute;
+            width:30vw;
+            height:15vh;
+            left:35vw;
+            top:20vh;
+            z-index: 999;
+        }
+        #wenzi1{
+            position:absolute;
+            width:30vw;
+            height:5vh;
+            left:34vw;
+            top:40vh;
+            z-index: 999;
+        }
+        #kaishi{
+            position:absolute;
+            width:15vw;
+            height:10vh;
+            left:43vw;
+            top:54vh;
+            z-index: 999;
+
+        }
+        #kaishi:hover{
+            transform: scale(1.2);
+            transition-duration: 0.5s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<div class="vfx-image-wrap">
+    <div class="before-image">
+        <img src="images/1.png" alt="" />
+    </div>
+    <div class="after-image">
+        <img src="images/2.png" alt="" />
+    </div>
+    <div class="divider-bar"></div>
+</div>
+</div>
+<img src="images/wenzi2.png" id="wenzi2" >
+<img src="images/wenzi1.png" id="wenzi1" >
+<img  id="kaishi" src="images/kaishi.png">
+<script src='js/index.change1.js'></script>
+<script src="js/index.change2.js"></script>
+
+<script>
+    // (function() {
+    //     $.fatNav();
+    // }());
+
+    var kaishi = document.getElementById("kaishi");
+    kaishi.onclick = function () {
+        // alert("00");
+        window.location.href="home.html";
+    }
+    
+
+
+</script>
+
+</body>
+</html>

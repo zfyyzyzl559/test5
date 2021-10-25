@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          html,body{
+                height:100%;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+        /* *{
+            margin: 0;
+            padding: 0;
+        } */
+        .container{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background: #1e7755;
+            overflow: hidden;
+        }
+        .bg{
+           
+            height: 100%; 
+            width: 100%;
+            /* overflow: hidden; */
+            
+        }
+        .btn{
+            position: absolute;
+            margin: 0 auto;
+            top: 66%;
+            left: 0;
+            right: 0;
+            /* left: 10%; */
+        }
+      
+        .box{
+            position: absolute;
+            margin: 0 auto;
+            width: 63%;
+            height: 77%;
+            top: 10%;
+            left: 0;
+            right: 0;
+            border-radius: 15px;
+            background-color: rgba(255, 255, 255, 0.308);
+            display: flex;
+            justify-content:space-between;
+            /* flex-grow:1; */
+            padding-left: 5%;
+            padding-right: 5%;
+           
+           
+
+        }
+        .chapter{
+            /* position: absolute; */
+            /* margin: 0 auto; */
+            width: 22%;
+            height: 58%;
+            align-self: center;
+            cursor: pointer;
+           
+        }
+        .text1{
+            position: absolute;
+            /* width: 72%; */
+            top: 14%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            z-index: 10;
+            /* background-color: #fff; */
+        }
+        .c1:hover{
+            transform: scale(1.2);
+            transition-duration: 0.5s;
+            z-index: 10;
+        }
+        .c2:hover{
+            transform: scale(1.2);
+            transition-duration: 0.5s;
+            z-index: 10;
+        }
+        .c3:hover{
+            transform: scale(1.2);
+            transition-duration: 0.5s;
+            z-index: 10;
+        }
+
+    </style>
+</head>
+<body>
+   <div class="container">
+    <img class="bg" src="img/背景ui.png" alt="">
+    <img class="text1" src="img/文字2.png" alt="">
+    <div class="box">
+        
+        <img class="chapter c1" src="img/knowledge.png" alt="">
+        <img class="chapter c2" src="img/game.png" alt="">
+        <img class="chapter c3" src="img/test.png" alt="">
+
+    </div>
+    
+   </div>
+   <script>
+        //  //通过id获取图片元素,注册点击事件,添加事件处理函数
+        // var arr = [];
+        //  var p1 = document.querySelector(".c1");
+        //  var p2 = document.querySelector(".c2");
+        //  var p3 = document.querySelector(".c3");
+        //  arr = [p1,p2,p3];
+        //  console.log(arr);
+        //  for(var i = 0; i < 3; i++){
+        //     arr[i].onclick = function () {
+       
+        //    if(this.style.width == "26%"){
+        //        for(var m = 0; m < 3; m++){
+        //         this.style.width = "22%";
+        //        }
+            
+        //    }else{
+        //     this.style.width = "26%";
+        //    }
+
+         
+        // };
+
+        //  }
+      
+    </script>
+</body>
+</html>
